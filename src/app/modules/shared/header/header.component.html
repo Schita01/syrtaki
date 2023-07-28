@@ -1,0 +1,117 @@
+<ng-container *ngIf="!isGame">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand responsive-logo" href="" routerLink="main"
+        ><img id="navbar-logo" src="../../assets/img/909.jpg" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              routerLink="main"
+              routerLinkActive="active"
+              >მთავარი</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="games" routerLinkActive="active"
+              >თამაშები</a
+            >
+          </li>
+          <a class="navbar-brand logo" routerLink="main"
+            ><img id="logo" src="../../assets/img/909.jpg" alt=""
+          /></a>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="aboniments"
+              routerLinkActive="active"
+              >აბონიმენტი</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contacts" routerLinkActive="active"
+              >კონტაქტი</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</ng-container>
+<ng-container *ngIf="isGame">
+  <nav
+    class="navbar navbar-expand-xxl navbar-second"
+    style="background-color: rgb(42, 58, 74, 0) !important;position: absolute;width: 100%;box-shadow: none;z-index: 999;padding-top: 62px !important;"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand responsive-logo" href="" routerLink="main"
+        ><img id="navbar-logo" src="../../assets/img/logo-another.svg" alt="" />
+      </a>
+      <h3 class="navbar-second-text-second" style="color: white; width: 400px; display: none;">
+        სამოცდაათზე მეტი სამაგიდო თამაში
+      </h3>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="navbar-brand logo" routerLink="main"
+            ><img id="logo" src="../../assets/img/logo-another.svg" alt=""
+          /></a>
+          <h3 class="navbar-second-text" style="color: white; width: 400px">
+            სამოცდაათზე მეტი სამაგიდო თამაში
+          </h3>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              routerLink="main"
+              routerLinkActive="active"
+              >მთავარი</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="games" routerLinkActive="active"
+              >თამაშები</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="aboniments"
+              routerLinkActive="active"
+              >აბონიმენტი</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contacts" routerLinkActive="active"
+              >კონტაქტი</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</ng-container>

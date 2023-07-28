@@ -1,0 +1,46 @@
+.popular-games-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.title{
+    border-bottom: 1.7px solid black;
+    padding-right: 30px;
+    width: fit-content;
+}
+.carousel-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-content{
+  padding-top: 50px;
+  &:hover,
+  &:focus {
+    .img {
+      box-shadow: 0px 0px 35px 10px rgba(255, 0, 51, 0.3);
+    }
+  }
+    .games-title{
+        color: black;
+      margin-top: 30px;
+    }
+    .games-description{
+        color: gray;
+
+    }
+}
+.img {
+  height: 155px;
+  width: 140px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+@media (max-width: 450px) {
+  .title {
+    margin: auto;
+    padding: 0px;
+  }
+}
