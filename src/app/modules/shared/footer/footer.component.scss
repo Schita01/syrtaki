@@ -1,7 +1,7 @@
 
 .footer{
     width: 100%;
-    background-color: rgb(42, 58, 74);
+    background-color: #fefbec;
 }
 .footer-container{
     display: flex;
@@ -18,19 +18,19 @@
     width: 100%;
 }
 .footer-image{
-    width: 6rem;
-    height: 5.640000000000001rem;
+    width: 11rem;
+    height: 3.6399999999999997rem;
     margin-bottom: 1rem;
 }
 .footer-text{
-    color: white;
+    color: black;
     width: 530px;
     text-align: start;
     margin-bottom: 20px;
     line-height: 23px;
 }
 .footer-copyright{
-    color: white;
+    color: black;
     font-weight: 600;
     padding-bottom: 34px;
 }
@@ -41,17 +41,19 @@
     gap: 100px;
 }
 .footer-links{
-    color: #fff;
+    color: black;
     display: flex;
     gap: 1.3rem;
     list-style: none;
+    padding: 0;
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 15px;
+    white-space: nowrap;
 }
 .footer-item a{
     cursor: pointer;
-    color: white;
+    color: black;
 }
 .footer-item a:hover{
     color: #FD7E14;
@@ -62,7 +64,7 @@
     transition: .3s;
 }
 .footer-icons{
-    color: #fff;
+    color: black;
     font-size: 30px;
     gap: 35px;
     display: flex;
@@ -71,7 +73,7 @@
     padding: 0px;
 
     .fa{
-        color: white;
+        color: black;
     }
 
     .fa:hover{
@@ -84,10 +86,15 @@
     display: none;
 }
 //footer responsive//
+@media screen and (max-width:1420px) {
+    .footer-links{
+        flex-wrap: wrap;
+    }
+    }
 
 @media screen and (max-width:1200px) {
 .footer-links-responsive{
-   color: white;
+   color: black;
    display: flex;
    letter-spacing: 2px;
    font-weight: 600;
@@ -114,7 +121,7 @@
 }
 }
 
-@media screen and (max-width:777px) {
+@media screen and (max-width:969px) {
     .footer-links-responsive{
          flex-direction: column;
      }
