@@ -9,4 +9,5 @@ export class SliderComponent {
   @Input() slidesStore: any;
   @Input() customOptions: any;
   @Input() title: string;
+  
 }

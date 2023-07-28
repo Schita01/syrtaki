@@ -1,27 +1,40 @@
 
-.navbar{
-    background-color: rgb(42, 58, 74) !important;
-    padding: 18px !important;
+.bg{
+    background-color: #fefbec !important;
     box-shadow: 0px 1px 3px 2px #243240;
 }
+
+.res {
+    display: none;
+}
+.pc {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+nav {
+    padding: 20px 0px;
+}
 .nav-link{
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+.navbar-items {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
 }
 
 .navbar-brand {
-    padding-left: 4rem;
-    padding-right: 4rem;
 }
 
+
 .navbar-brand #logo {
-    width: 65px;
+    width: 125px;
 }
-.navbar-nav{
-    justify-content: center !important;
-    align-items: center;
-    width: 100%;
-    gap: 1.8rem;
-}
+
 #navbar-logo{
     display: none !important;
 }
@@ -72,7 +85,19 @@
     width: 50%;
 }
 @media only screen and (max-width: 991px) {
+    .pc {
+        display: none;
+    }
 
+    .res {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    .navbar-toggler-icon {
+        padding-left: 4rem 0;
+    }
 
     #logo{
         display: none;  
@@ -81,15 +106,20 @@
     .logo {
         display: none;
     }
+
+    .navbar-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+
     .responsive-logo{
         display: flex;
     }
-    .navbar-brand{
-        padding: 0;
-    }
     #navbar-logo{
         display: flex !important;
-        width: 65px;
+        width: 100px;
     }
 
     

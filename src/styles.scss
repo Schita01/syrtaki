@@ -62,7 +62,7 @@ html{
 }
 
 
-
+// loader
 
 .loader {
     width: 112px;
@@ -296,10 +296,19 @@ html{
       margin-left: 0px;
     }
   }
+  // #loader
   .owl-theme {
     z-index: 0;
   }
-
+  .owl-nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: -19px;
+    right: -19px;
+    transform: translateY(-50%);
+  }
 .owl-carousel .owl-item img {
   height: 180px;
   width: 150px;
@@ -320,4 +329,22 @@ html{
 @font-face {
   font-family: "font";
   src: url("./assets/bpg_glaho_sylfaen.ttf") format("woff");
+}
+.img {
+  img {
+    object-fit: cover !important;
+  }
+}
+@media (max-width: 450px) {
+  .carousel-img {
+    height: 121px !important;
+    object-fit: cover;
+  }
+  .img {
+    height: 100% !important;
+
+  }
+  .owl-theme .owl-nav {
+    margin: 0px !important;
+  }
 }

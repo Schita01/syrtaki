@@ -3,6 +3,7 @@ import { MainComponent } from './main.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from '../shared/shared.module';
 const routes: Routes = [
   {path: '', component: MainComponent}
 ]
@@ -13,8 +14,9 @@ const routes: Routes = [
   ],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   providers: [],
 })
-export class MainModule { }
+export class MainModule { } 
