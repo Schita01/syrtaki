@@ -1,7 +1,7 @@
 
 .bg{
     background-color: #fefbec !important;
-    box-shadow: 0px 1px 3px 2px #243240;
+    box-shadow:0px 1px 6px 2px #ece8d3;
 }
 
 .res {
@@ -10,7 +10,7 @@
 .pc {
     display: flex;
     align-items: center;
-    gap: 1.8rem;
+    gap: 11px;
 }
 nav {
     padding: 20px 0px;
@@ -25,9 +25,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between !important;
-}
-
-.navbar-brand {
 }
 
 
@@ -46,9 +43,9 @@ nav {
 }
 
 .navbar-nav  li{
-    font-size: 1.1rem;
+    font-size: 14px;
     color: var(--bs-white);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     transition: 0.2s;
     cursor: pointer;

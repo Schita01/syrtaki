@@ -51,8 +51,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     background-color: rgb(255,255,255);
-  font-family: font;
-
+    font-family: font;
 }
 
 
@@ -123,7 +122,7 @@ html{
 
 @font-face {
   font-family: "font";
-  src: url("./assets/bpg_glaho_sylfaen.ttf") format("woff");
+  src: url("/assets/bpg_glaho_sylfaen.ttf") format("woff");
 }
 .img {
   img {
@@ -137,3 +136,15 @@ html{
   }
   .img {
     height: 100% !important;
+  }
+}
+h3{
+  font-weight: 600;
+  font-size: 36px;
+}
+h4{
+  font-size: 38px;
+}
+span{
+  font-size: 23px;
+}
