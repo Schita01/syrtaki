@@ -107,6 +107,12 @@ html{
     right: -19px;
     transform: translateY(-50%);
   }
+  @media only screen and (max-width: 575.20px) {
+  .owl-nav{
+    left: -12px;
+    right: -12px;
+  }
+    }
 .owl-carousel .owl-item img {
   height: 180px;
   width: 150px;
