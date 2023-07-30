@@ -1,9 +1,11 @@
 <div class="main">
-  <app-header [isGame]="isGame"></app-header>
-  <div class="content">
-    <router-outlet></router-outlet>
+  <div class="P">
+    <app-header [isGame]="isGame"></app-header>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
   </div>
-  <app-footer></app-footer>
   <div class="loader-costum" *ngIf="loader">
     <div class="spinner">
       <app-loader></app-loader>

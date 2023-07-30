@@ -6,15 +6,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements AfterViewInit {
+export class MainComponent {
   // @ts-ignore
-  @ViewChild('myVideo') myVideo: ElementRef<HTMLVideoElement>;
-  ngAfterViewInit(): void {
-    const videoElement: HTMLVideoElement = this.myVideo.nativeElement;
-    videoElement.addEventListener('ended', () => {
-      videoElement.play();
-    });
-  }
 
   chosenIndex: number = -1;
   defChosen: boolean = true;

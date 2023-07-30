@@ -1,7 +1,9 @@
 @import url('../src//assets/_pallete.scss');
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
-
+.row {
+  width: 100%;
+}
 
 *{
     margin: 0;
@@ -72,10 +74,14 @@ html{
 .cooking-moment {
   width: 99px;
   height: 99px;
-  background-image: url('/assets/img/loader-logo.jpg');
   background-size: cover;
+  position: relative;
   border-radius: 50%;
   animation: pulse 1s ease-in-out infinite;
+  background-image: url(/assets/img/loader\ image.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
