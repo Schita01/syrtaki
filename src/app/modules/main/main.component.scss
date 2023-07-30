@@ -128,9 +128,21 @@
  }
 
  @media only screen and (max-width: 620px) {
-     .live-music-text{
-       padding-top:30px;
-       width: 100%;
+     .main-title{
+        font-size: 29px;
+     }
+     .inside-view-main{
+
+        span{
+            font-size: 18px;
+         }
+         
+         h3{
+            font-size: 30px;
+         }
+         h4{
+            font-size: 29px;
+         }
      }
      .pickup-order-text{
         width: 100%;
