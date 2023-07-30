@@ -1,89 +1,55 @@
 <h3 class="main-title">Tägliche Angeboten</h3>
-
 <div class="container">
   <app-slider
     [slidesStore]="slidesStore"
     [customOptions]="customOptions"
   ></app-slider>
-</div>
 
-<div class="main">
-  <div class="row">
-    <div class="col-md-4 col-costum">
-      <div class="content-left"></div>
-    </div>
-    <div class="col-md-8 col-costum">
-      <video loop [muted]="'muted'" autoplay #myVideo>
-        <source
-          src=""
-          type="video/mp4"
-        />
-      </video>
-    </div>
-  </div>
-  <div class="gradient"></div>
-  <div class="text">
-    <div class="main-txt">
-      <span
-        >პირველი
-        <span class="gold">სამაგიდო <br />თამაშების სივრცე</span>
-        <br />
-        კახეთში</span
-      >
-    </div>
-    <div class="show-more">
-      <a target="_blank" href="https://www.facebook.com/boardgamesbartelavi">
-        <span class="show-more"
-          >შემოგვიერთდით<i class="fa fa-long-arrow-right" aria-hidden="true"></i
-        ></span>
-      </a>
-    </div>
-  </div>
-</div>
+  <div class="inside-view-main">
+    <div class="inside-view-container">
+      <h3>Die Innenansicht</h3>
+      <div class="live-music-main">
+        <h4 data-aos="zoom-in" style="margin-bottom: 25px;">Live music</h4>
+          <div class="row aligner aligners">
+            <div class="col-md-6">
+              <div class="t">
+                <span data-aos="fade-right" class="live-music-text">Am ersten Samstag des Monats laden wir Musiker aus
+                  dem sonnigen Griechenland zu uns ein. Musik, Lieder und
+                  Tänze machen Ihren Abend Lustig und interessant.
+                  Tischreservierungen werden telefonisch entgegengenommen. 
+                  Wir freuen uns auf ihren Besuch.
+                </span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div data-aos="zoom-in"  class="music-img-div"><img class="music-img" src="/assets/img/music img.jpg" alt=""></div>
+            </div>
+          </div>
+      </div>
 
-<div class="cards-main">
-  <div id="cards-main-title">
-    <h1 id="cards-title">პოპულარული თამაშები</h1>
-  </div>
-  <div class="cards-container">
-    <div class="cards card-1">
-      <div data-aos="zoom-in" class="element-slideup">
-        <img class="pts" src="" alt="" />
-        <h3 id="cards-text">catan</h3>
+      <div class="pickup-order-main">
+      <div data-aos="zoom-in" class="pickup-order-text-container">
+        <div class="pickup-order-title-container">
+          <h4>Abhol Angebot</h4>
+          <h4 style="color: #FD7E14;">-10.50€</h4>
+        </div>
+        <span class="pickup-order-text">Bestellen Sie essen zu mit nehmen auf unserer Abhol Angebot oder wählen Sie ein Gericht nach Ihrem Geschmack aus unserer Speisekarte.</span>
       </div>
-      <a class="button-div" href=""
-        ><button class="learn-more-button">გაიგე მეტი</button></a
-      >
-    </div>
-    <div class="cards card-2">
-      <div data-aos="zoom-in" class="element-slideup">
-        <img class="pts" src="" alt="" />
-        <h3 id="cards-text">DiXit</h3>
+      <div class="row aligner alignerss" style="flex-direction: row-reverse;">
+        <div class="col-md-6">
+          <div data-aos="zoom-in-left" class="pickup-order-menu">
+            <span>94a. Gyros</span>
+            <span>62a. Suflaki — meat skewers</span>
+            <span>68a. Leber vom Schwein</span>
+            <span>95a. Gyros — Pfännchen</span>
+            <span>70a. Suzukia — Hackfleisch</span>
+            <span class="pickup-order-text-second">Zu allen Fleischgerichten gehört Reis oder Pommes und gemischter Salat dazu.</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+        <div data-aos="zoom-in" class="order-img-div"><img class="order-img" src="/assets/img/shop img.jpg" alt=""></div>
+        </div>
       </div>
-      <a class="button-div" href=""
-        ><button class="learn-more-button">გაიგე მეტი</button></a
-      >
-    </div>
-    <div class="cards card-3">
-      <div data-aos="zoom-in" class="element-slideup">
-        <img src="" alt="" />
-        <h3 id="cards-text" class="cards-text-03">dragonwood</h3>
-      </div>
-      <a class="button-div" href=""
-        ><button class="learn-more-button">გაიგე მეტი</button></a
-      >
-    </div>
-    <div class="cards card-4">
-      <div data-aos="zoom-in" class="element-slideup">
-        <img src="" alt="" />
-        <h3 id="cards-text">hedbanz</h3>
-      </div>
-      <a class="button-div" href="">
-        <button class="learn-more-button">გაიგე მეტი</button>
-      </a>
-    </div>
-    <div class="cards card-5">
-      <h2 data-aos="fade-up" id="card-5-text">იხილეთ ყველა თამაში</h2>
     </div>
   </div>
 </div>

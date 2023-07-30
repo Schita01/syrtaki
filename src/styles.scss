@@ -1,7 +1,9 @@
 @import url('../src//assets/_pallete.scss');
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
-
+.row {
+  width: 100%;
+}
 
 *{
     margin: 0;
@@ -51,8 +53,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     background-color: rgb(255,255,255);
-  font-family: font;
-
+    font-family: font;
 }
 
 
@@ -73,10 +74,14 @@ html{
 .cooking-moment {
   width: 99px;
   height: 99px;
-  background-image: url('/assets/img/loader-logo.jpg');
   background-size: cover;
+  position: relative;
   border-radius: 50%;
   animation: pulse 1s ease-in-out infinite;
+  background-image: url(/assets/img/loader\ image.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -94,7 +99,11 @@ html{
 
   .owl-theme {
     z-index: 0;
+    margin: 0;
   }
+  .owl-theme .owl-nav{
+  margin: 0;
+}
   .owl-nav{
     display: flex;
     justify-content: space-between;
@@ -104,6 +113,12 @@ html{
     right: -19px;
     transform: translateY(-50%);
   }
+  @media only screen and (max-width: 575.20px) {
+  .owl-nav{
+    left: -12px;
+    right: -12px;
+  }
+    }
 .owl-carousel .owl-item img {
   height: 180px;
   width: 150px;
@@ -123,7 +138,7 @@ html{
 
 @font-face {
   font-family: "font";
-  src: url("./assets/bpg_glaho_sylfaen.ttf") format("woff");
+  src: url("/assets/bpg_glaho_sylfaen.ttf") format("woff");
 }
 .img {
   img {
@@ -137,3 +152,16 @@ html{
   }
   .img {
     height: 100% !important;
+  }
+}
+h3{
+  font-weight: 600;
+  font-size: 36px;
+  color: #FD7E14;
+}
+h4{
+  font-size: 38px;
+}
+span{
+  font-size: 23px;
+}
