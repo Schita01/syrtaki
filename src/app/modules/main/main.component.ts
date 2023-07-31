@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit, Input } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+declare const fullpage: any;
 
 @Component({
   selector: 'app-main',
@@ -12,7 +13,7 @@ export class MainComponent {
   chosenIndex: number = -1;
   defChosen: boolean = true;
   ngOnInit(): void {
-
+    this.initFullPage();
   }
   slidesStore: any = [
     {
@@ -76,5 +77,18 @@ export class MainComponent {
     this.defChosen = false;
   }
 
+initFullPage() {
+  new fullpage('#fullpage', {
+    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+    anchors: ['section1', 'section2', 'section3', 'section4'],
+    menu: '#menu',
+    scrollingSpeed: 1000,
+    parallax: true, // Enable parallax effect
+    parallaxOptions: {
+      type: 'reveal', // You can try different types of parallax effects
+      percentage: 100, // Customize the parallax effect percentage
+      property: 'rotate' // Use 'translate', 'rotate', 'scale', or 'opacity' for the parallax property
+    }
+  });
 }
- 
+}

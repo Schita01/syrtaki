@@ -1,6 +1,8 @@
 <div class="main">
   <div class="P">
-    <app-header [isGame]="isGame"></app-header>
+    <header style="position: fixed; left: 0px; right: 0px; top: 0px; z-index: 9999">
+      <app-header [isGame]="isGame"></app-header>
+    </header>
     <div class="content">
       <router-outlet></router-outlet>
     </div>
