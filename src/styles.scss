@@ -21,6 +21,14 @@ a{
 .fp-watermark{
   display: none;
 }
+#fp-nav.fp-left{
+  left: 0;
+}
+@media (max-width:835px) {
+  .fp-left{
+    left: 15px !important;
+  }
+}
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;

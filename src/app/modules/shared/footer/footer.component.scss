@@ -54,6 +54,7 @@
 .footer-item a{
     cursor: pointer;
     color: black;
+    transition: all 0.3s ease-in-out;
 }
 .footer-item a:hover{
     color: #FD7E14;
@@ -64,16 +65,15 @@
     transition: .3s;
 }
 .footer-icons{
+    padding: 0px;
     color: black;
     font-size: 30px;
     gap: 35px;
     display: flex;
-}
-.footer-icons{
-    padding: 0px;
 
     .fa{
         color: black;
+        transition: all .3s ease-in-out;
     }
 
     .fa:hover{

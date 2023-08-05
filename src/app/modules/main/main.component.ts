@@ -79,10 +79,12 @@ export class MainComponent {
 
 initFullPage() {
   new fullpage('#fullpage', {
-    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-    anchors: ['section1', 'section2', 'section3', 'section4'],
+    // sectionsColor: ['#f1f2f6', '#f1f2f6', '#f1f2f6','#f1f2f6'],
+    anchors: ['section1', 'section2', 'section3','section4', 'section5'],
     menu: '#menu',
     scrollingSpeed: 1000,
+    navigationPosition: 'left',
+    navigation: true,
     parallax: true, // Enable parallax effect
     parallaxOptions: {
       type: 'reveal', // You can try different types of parallax effects
@@ -90,5 +92,7 @@ initFullPage() {
       property: 'rotate' // Use 'translate', 'rotate', 'scale', or 'opacity' for the parallax property
     }
   });
+  
+
 }
 }
